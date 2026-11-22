@@ -1,0 +1,23 @@
+# Lower bounds = the versions this project was developed and tested with.
+
+# Core pipeline
+pymupdf>=2.1               # PDF parsing / generation (import name: pymupdf; legacy alias: fitz)
+pydantic>=2.14
+openai>=3.51               # OpenAI-compatible SDK for OpenAI / DeepSeek / Groq
+numpy>=2.5
+pandas>=3.1
+scikit-learn>=1.9          # TF-IDF + TruncatedSVD (LSA embedder)
+faiss-cpu>=1.16
+rank-bm25>=0.2.2
+
+# Tracking, dashboard, plots
+mlflow>=3.18
+streamlit>=1.67
+plotly>=7.1
+matplotlib>=3.11
+
+# Tests
+pytest>=9.2
+
+# Optional: neural dense retriever (python train.py --embedder st; downloads all-MiniLM-L6-v2 once)
+sentence-transformers>=6.3
